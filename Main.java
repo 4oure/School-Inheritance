@@ -43,9 +43,9 @@ class Main {
     ArrayList<Student> christianLifeChoices = new ArrayList<>();
     ArrayList<Student> honorsPhilosophyStudents = new ArrayList<>();
     ArrayList<Student> sacraments = new ArrayList<>();
-    ArrayList<Student>  = new ArrayList<>();
+    ArrayList<Student> socialJustice = new ArrayList<>();
 
-    APEngLitStudents.add(Caden)
+    APEngLitStudents.add(Caden);
 
     APChemStudents.add(Bill);
     APChemStudents.add(Ryan);
@@ -71,6 +71,8 @@ Subject computerScienceA = new Subject(CSAstudents.size(), true, false, false, "
 Subject APChem = new Subject(APChemStudents.size(), true, false, false, "Dr. Baker", APChemStudents);
 
 Subject APCalculusAB = new Subject(ABStudents.size(), true, false,e false, "Mr. Connolly", ABStudents);
+
+Subject APEngLit = new Subject(APEngLitStudents)
 
 
     
