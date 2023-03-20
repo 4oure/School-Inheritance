@@ -45,6 +45,8 @@ class Main {
     ArrayList<Student> sacraments = new ArrayList<>();
     ArrayList<Student> socialJustice = new ArrayList<>();
 
+    
+
     APEngLitStudents.add(Caden);
 
     APChemStudents.add(Bill);
@@ -72,7 +74,7 @@ Subject APChem = new Subject(APChemStudents.size(), true, false, false, "Dr. Bak
 
 Subject APCalculusAB = new Subject(ABStudents.size(), true, false,e false, "Mr. Connolly", ABStudents);
 
-Subject APEngLit = new Subject(APEngLitStudents)
+Subject APEngLit = new Subject(APEngLitStudents.size(), true, false, false, "Mrs. Howe", APEngLitStudents);
 
 
     
@@ -84,7 +86,11 @@ Subject APEngLit = new Subject(APEngLitStudents)
     scienceSubjects.add(APChem);
 
     Department Religion = new Religion("Religion, "Mr. Kimble", 10, )
+
+    Department English = new English("English", "Mr Blair", 30)
     
-    System.out.println("Happy Leprechaun and Ginger Day");
+   
+                                       
+                                       System.out.println("Happy Leprechaun and Ginger Day");
   }
 }
