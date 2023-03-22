@@ -45,7 +45,10 @@ class Main {
     ArrayList<Student> sacraments = new ArrayList<>();
     ArrayList<Student> socialJustice = new ArrayList<>();
 
-    
+  ArrayList<Student> APUSH = new ArrayList<>();
+  ArrayList<Student> APGov = new ArrayList<>();
+  ArrayList<Student> honorsGov = new ArrayList<>();
+  ArrayList<Student> honorsUSH = new ArrayList<>();
 
     APEngLitStudents.add(Caden);
 
@@ -87,7 +90,7 @@ Subject APEngLit = new Subject(APEngLitStudents.size(), true, false, false, "Mrs
 
     Department Religion = new Religion("Religion, "Mr. Kimble", 10, )
 
-    Department English = new English("English", "Mr Blair", 30)
+    Department English = new English("English", "Mr Blair", 30, )
     
    
                                        
