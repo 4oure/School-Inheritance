@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Department {
 	private String subject;
-	private String head;
+	private Faculty head = new Faculty();
 	private int numOfFaculty;
   private ArrayList<Subject> subjectList = new ArrayList<Subject>();
   private ArrayList<Faculty> facultyList = new ArrayList<Faculty>();
@@ -19,9 +19,9 @@ public void setSubjectList(ArrayList<Subject> subjectList) {
 	this.subjectList = subjectList;
 }
 
-	public Department(String s, String h, int n, ArrayList<Subject> subjects, ArrayList<Faculty> faculty){
+	public Department(String s, Faculty head, int n, ArrayList<Subject> subjects, ArrayList<Faculty> faculty){
 		this.subject = s;
-		this.head = h;
+		this.head = head;
 		this.numOfFaculty = n;
     this.subjectList = subjects;
     facultyList = faculty;
@@ -35,11 +35,11 @@ public void setSubjectList(ArrayList<Subject> subjectList) {
 		this.subject = subject;
 	}
 
-	public String getHead() {
+	public Faculty getHead() {
 		return head;
 	}
 
-	public void setHead(String head) {
+	public void setHead(Faculty head) {
 		this.head = head;
 	}
 

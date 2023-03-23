@@ -17,7 +17,8 @@ public class Employee {
     this.numberOfEmployees++;
   }
 
-  public Employee(String name, int yearsExp, String job, String degree, Boolean departmentHead) {
+  public Employee(int id, String name, int yearsExp, String job, String degree, Boolean departmentHead) {
+		this.id = id;
     this.name = name;
     this.yearsExp = yearsExp;
     addJob(job);

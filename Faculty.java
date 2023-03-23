@@ -12,6 +12,7 @@ public class Faculty extends Employee {
   static ArrayList<Faculty> WorldLangTeachers = new ArrayList<Faculty>();
   static ArrayList<Faculty> RelTeachers = new ArrayList<Faculty>();
   static ArrayList<Faculty> FATeachers = new ArrayList<Faculty>();
+  static ArrayList<Faculty> SSTeachers = new ArrayList<Faculty>();
 
   static ArrayList<ArrayList<Faculty>> DepartmentTeachers = new ArrayList<ArrayList<Faculty>>();
 
@@ -20,7 +21,7 @@ public class Faculty extends Employee {
 
   }
 
-  public Faculty(int id, String name, int yearsExp, String department, String degree, boolean depHead) {
+  public Faculty(int id, String name, int yearsExp, Department department, String degree, boolean depHead) {
     super(id, name, yearsExp, "faculty", degree, depHead);
     addDepartment(department);
   }
@@ -28,7 +29,8 @@ public class Faculty extends Employee {
   // methods
 
   // add to dept
-  public void addDepartment(String depName) {
+  public void addDepartment(Department department) {
+		String depName = department.getSubject();
     switch (depName.toLowerCase()) {
       case "math":
         MathTeachers.add(this);

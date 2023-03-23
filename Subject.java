@@ -7,17 +7,17 @@ public class Subject {
   private boolean isAP;
   private boolean isHonors;
   private boolean isRegular;
-  private String nameTeacher;
+  private Faculty teacher;
 
 ArrayList<Student> students = new ArrayList<Student>();
 
-public Subject(int numOfStudents, boolean isAP, boolean isHonors, boolean isRegular, String nameTeacher, ArrayList<Student> students){
+public Subject(int numOfStudents, boolean isAP, boolean isHonors, boolean isRegular, Faculty teacher, ArrayList<Student> students){
 
   this.numOfStudents = numOfStudents;
   this.isAP = isAP;
   this.isHonors = isHonors;
   this.isRegular = isRegular;
-  this.nameTeacher = nameTeacher;
+  this.teacher = teacher;
   this.students = students;
 }
 
@@ -87,14 +87,6 @@ public void setRegular(boolean isRegular) {
 	this.isRegular = isRegular;
 }
 
-public String getNameTeacher() {
-	return nameTeacher;
-}
-
-public void setNameTeacher(String nameTeacher) {
-	this.nameTeacher = nameTeacher;
-}
-
 public ArrayList<Student> getStudents() {
 	return students;
 }
@@ -102,5 +94,12 @@ public ArrayList<Student> getStudents() {
 public void setStudents(ArrayList<Student> students) {
 	this.students = students;
 }
-  
+
+public Faculty getTeacher(){
+	return teacher;
+}
+
+public void setTeacher(Faculty teacher){
+	this.teacher = teacher;
+}
 }
